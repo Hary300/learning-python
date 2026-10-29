@@ -36,7 +36,25 @@
 # minimal = min(var_list)
 # banyak = var_list.count(605132)
 
-x = 'test'
-x[0] ='p'
+# x = 'test'
+# x[0] ='p'
 
-print(x)
+# print(x)
+
+# print("Selamat datang dalam program Python!\n")
+# print("Silakan masukkan data diri Anda.")
+# nama = input("Masukkan nama Anda: ")
+# tahun_lahir = input("Masukkan tahun lahir Anda: ")
+# umur = 2023 - int(tahun_lahir)
+ 
+# print(f"Selamat datang {nama} dalam program Python, per 2023 umur Anda adalah {umur} tahun.\n")
+# print("Terima kasih telah menggunakan program Python!")
+
+# for i in range(10):
+#   print(i)
+
+
+
+evenNumber = [n for n in range(501) if n % 2 == 0]
+
+print(evenNumber)
