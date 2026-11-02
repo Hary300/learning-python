@@ -1,3 +1,5 @@
+import test
+
 # var = "Hello world!"
 # print(var[0])
 # print(var)
@@ -55,6 +57,9 @@
 
 
 
-evenNumber = [n for n in range(501) if n % 2 == 0]
+# evenNumber = [n for n in range(501) if n % 2 == 0]
 
-print(evenNumber)
+# print(evenNumber)
+
+luas_persegi_panjang1 = test.mencari_luas_persegi_panjang(10, 5)
+print(luas_persegi_panjang1)
