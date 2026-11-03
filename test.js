@@ -45,6 +45,53 @@ class Money {
 
 const money1 = new Money(100);
 const money2 = new Money(250);
-console.log(money1 + money2);
+console.log(money1 - money2);
 console.log(String(money1));
 console.log(String(money2));
+
+// class BankAccount {
+//   constructor(owner, balance) {
+//     ((this.owner = owner), (this.balance = balance ?? 0));
+//   }
+
+//   deposit(amount) {
+//     if (amount <= 0) {
+//       console.log('Invalid amount');
+//       return;
+//     }
+
+//     this.balance += amount;
+//     console.log(this.balance);
+//     return this.balance;
+//   }
+
+//   withdraw(amount) {
+//     if (amount > this.balance) {
+//       console.log('Insufficient funds');
+//       return;
+//     }
+
+//     if (amount <= 0) {
+//       console.log('Invalid amount');
+//       return;
+//     }
+
+//     this.balance -= amount;
+//     console.log(this.balance);
+//     return this.balance;
+//   }
+
+//   getBalance() {
+//     console.log(this.balance);
+//     return this.balance;
+//   }
+// }
+
+// const account = new BankAccount('John', 100);
+
+// account.deposit(50); // 150
+// account.withdraw(30); // 120
+// account.getBalance(); // 120
+
+// account.withdraw(200); // "Insufficient funds"
+// account.deposit(-10); // "Invalid amount"
