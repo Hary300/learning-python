@@ -61,5 +61,19 @@ import test
 
 # print(evenNumber)
 
-luas_persegi_panjang1 = test.mencari_luas_persegi_panjang(10, 5)
-print(luas_persegi_panjang1)
+# luas_persegi_panjang1 = test.mencari_luas_persegi_panjang(10, 5)
+# print(luas_persegi_panjang1)
+
+
+class Car:
+  def __init__(self, brand, color):
+    self.brand = brand
+    self.color = color
+
+  def greet(self):
+    print(f'This car is {self.brand}, and the color is {self.color}')
+
+
+car1 = Car('toyota', 'red')
+
+car1.greet()
