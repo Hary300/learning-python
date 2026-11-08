@@ -1,22 +1,19 @@
-def compareNum():
+def getNumberInput(step):
   askAgain = True
-  num1 = 0
-  num2 = 0
+  num = None
 
   while askAgain:
-    userInput1 = input('input the first number: ')
-    try:
-      num1 = int(userInput1)
-    except:
-      print('it has to be a number')
+      userInput = input(f'input the {step} number: ')
+      try:
+        num = int(userInput)
+        askAgain = False
+      except:
+        print('it has to be a number')
+  return num
 
-    userInput2 = input('input the second number: ')
-
-    try:
-      num2 = int(userInput2)
-      askAgain = False
-    except:
-      print('it has to be a number')
+def compareNum():
+  num1 = getNumberInput('first')
+  num2 = getNumberInput('second')
 
   if num1 < num2:
     print(f"{num2} is greater than {num1}")
@@ -25,6 +22,5 @@ def compareNum():
   else:
     print("Both numbers are equal")
   
-
-
 compareNum()
+
